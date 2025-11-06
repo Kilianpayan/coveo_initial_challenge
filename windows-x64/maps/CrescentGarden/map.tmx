@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="11" height="7" tilewidth="1" tileheight="1" infinite="0" nextlayerid="5" nextobjectid="1">
+ <tileset firstgid="1" name="tileset" tilewidth="1" tileheight="1" tilecount="5" columns="5">
+  <image source="../tileset.png" width="5" height="1"/>
+ </tileset>
+ <layer id="1" name="Colony" width="11" height="7">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,5,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,4,0,0,0,1,0,0,0,4,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,5,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Meta">
+  <properties>
+   <property name="difficulty" value="hard"/>
+   <property name="name" value="CrescentGarden"/>
+   <property name="totalBiomass" value="35"/>
+   <property name="maxBiomassPerTurn" value="7"/>
+   <property name="colony0PhaseShift" value="0"/>
+   <property name="colony1PhaseShift" value="1"/>
+   <property name="colony2PhaseShift" value="0"/>
+   <property name="colony3PhaseShift" value="1"/>
+   <property name="colony4PhaseShift" value="0.5"/>
+   <property name="colony5PhaseShift" value="1.5"/>
+  </properties>
+ </objectgroup>
+</map>

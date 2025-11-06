@@ -45,8 +45,7 @@ async def game_loop(websocket: ClientConnection, bot: Bot):
         print(game_message)
 
         if game_message.lastTickErrors:
-            pass
-            # print(f"Errors during last tick : {game_message.lastTickErrors}")
+            print(f"Errors during last tick : {game_message.lastTickErrors}")
 
         actions = []
 
@@ -54,9 +53,8 @@ async def game_loop(websocket: ClientConnection, bot: Bot):
         try:
             actions = bot.get_next_move(game_message)
         except Exception:
-            #print("Exception while getting next moves:")
-            #print(traceback.format_exc())
-            pass
+            print("Exception while getting next moves:")
+            print(traceback.format_exc())
         payload = {
             "type": "COMMAND",
             "tick": game_message.currentTickNumber,
